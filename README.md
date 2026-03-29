@@ -44,8 +44,7 @@ int	main(void)
     int		fd;
     char	*line;
 
-    int fd = open("file.txt", O_RDONLY);
-    char *line;
+    fd = open("file.txt", O_RDONLY);
 
     while ((line = get_next_line(fd)) != NULL)
     {
